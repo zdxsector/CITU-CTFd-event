@@ -122,7 +122,7 @@ pillow==10.1.0
     # via -r requirements.in
 pycparser==2.20
     # via cffi
-pydantic==1.6.2
+pydantic==1.10.13
     # via -r requirements.in
 pymysql[rsa]==1.0.2
     # via
@@ -170,6 +170,8 @@ sqlalchemy-utils==0.41.1
     # via -r requirements.in
 tenacity==6.2.0
     # via -r requirements.in
+typing-extensions==4.14.1
+    # via pydantic
 urllib3==1.26.20
     # via
     #   -r requirements.in
