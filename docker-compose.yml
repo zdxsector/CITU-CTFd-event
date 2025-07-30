@@ -1,0 +1,104 @@
+services:
+  stegano-challenge:
+    image: nginx:alpine
+    volumes:
+      - ./misc:/usr/share/nginx/html:ro
+    ports:
+      - "8080:80"
+  are_you_fast_in_math:
+    build: 
+      context: ./are-you-fast-in-math # CITU{0k_y0u_4r3_f4st_m4th_w1z4rd!}
+      dockerfile: Dockerfile
+    ports:
+      - 10010:5000
+    privileged: true
+    environment:
+      - JAIL_MEM=20MB
+      - JAIL_TIME=100
+
+  baby_overflow:
+    build: 
+      context: ./baby-overflow # CITU{ur_1rst_Pwn}
+      dockerfile: Dockerfile
+    ports:
+      - 10011:5000
+    privileged: true
+    environment:
+      - JAIL_MEM=5MB
+      - JAIL_TIME=120
+
+  katipwnan_buffer_bomber:
+    build: 
+      context: ./katipwnan-buffer-bomber # CITU{k4tipwn4n_0v3rfl0w_b0mb_4ctiv4t3d_BO000000M!!}
+      dockerfile: Dockerfile
+    ports:
+      - 10012:5000
+    privileged: true
+    environment:
+      - JAIL_MEM=5MB
+      - JAIL_TIME=120
+  
+  unsubscription_are_free:
+    build: 
+      context: ./unsubscription-are-free # CITU{CWE_416_USE_AFTER_FREE}
+      dockerfile: Dockerfile
+    ports:
+      - 10013:5000
+    privileged: true
+    environment:
+      - JAIL_MEM=20MB
+      - JAIL_TIME=120
+
+  prison_break_lvl1:
+    build: 
+      context: ./prison-break-lvl-1 # CITU{th1s_1s_jus7_4n_ez_0n3_w4rd3n_1s_c4r3l3ss}
+      dockerfile: Dockerfile
+    ports:
+      - 10014:5000
+    privileged: true
+    environment:
+      - JAIL_MEM=20MB
+      - JAIL_TIME=120
+
+  prison_break_lvl2:
+    build: 
+      context: ./prison-break-lvl-2 # CITU{0k_g00d_y0u_escaped_lvl_2_ret_has_a_message_for_you_in_the_next_level}
+      dockerfile: Dockerfile
+    ports:
+      - 10015:5000
+    privileged: true
+    environment:
+      - JAIL_MEM=20MB
+      - JAIL_TIME=30
+
+  prison_break_lvl3:
+    build: 
+      context: ./prison-break-lvl-3 # CITU{y0u_re4lly_4r3_pr1s0n_br34k3r_ret_wants_to_meet_you_soon!!!!}
+      dockerfile: Dockerfile
+    ports:
+      - 10016:5000
+    privileged: true
+    environment:
+      - JAIL_MEM=20MB
+      - JAIL_TIME=30
+
+  matryoshka:
+    build: 
+      context: ./matryoshka # CITU{ano_nemotto_ippai_matte_choudai_karinka_marinka_gen_o_hajiite}
+      dockerfile: Dockerfile
+    ports:
+      - 10180:80
+      
+  me_love_cookie:
+    build: 
+      context: ./me-love-cookie # CITU{cookie_pasta}
+      dockerfile: Dockerfile
+    ports:
+      - 10181:80
+
+  pop_goes_the_weasel:
+    build: 
+      context: ./pop-goes-the-weasel # CITU{easy_lamang_viewsource}
+      dockerfile: Dockerfile
+    ports:
+      - 10182:80
